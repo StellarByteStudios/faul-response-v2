@@ -1,9 +1,5 @@
 {
   "tasks": {
-    "Blatt 1": [
-      "HelloWorld",
-      "Compile"
-    ],
     "Blatt 5": [
       "Ship"
     ],
@@ -151,10 +147,6 @@
       "Zero": {
         "label": "∅",
         "text": ""
-      },
-      "noFeedback": {
-        "label": "Kein Feedback",
-        "text": "Es wurde kein Feedback gewünscht. Wenn du welches bekommen möchtest, musst du am Anfang deiner Abgabe als Kommentar\n```java\n//Feedback gewünscht\n```\nschreiben"
       }
     }
   },
@@ -175,51 +167,6 @@
         ],
         "label": "Falsches Ausgabeformat",
         "text": "- Leider hast du dich nicht an das Ausgabeformat gehalten. So laufen unsere Tests nicht durch. Auch wenn es an manchen Stellen hier etwas banal klingt ist es vor allem später unglaublich wichtig sich wirklich an die Vorgaben zu halten, wie ein Programm Dinge aus und zurück gibt. Allerspätestens wenn man mit mehreren Personen arbeitet."
-      },
-      "helloWorldWrongoutput": {
-        "task": "HelloWorld",
-        "label": "Hello World: Falsche Ausgabe",
-        "text": "- Die Ausgabe war klar vorgegeben. Starten mit einem \"Hello\", dann ein Leerzeichen, dann der GitHub Name und zum Schluss noch ein Ausrufezeichen '!'"
-      },
-      "helloWorldNameMissing": {
-        "task": "HelloWorld",
-        "label": "Hello World: Namen vergessen",
-        "text": "- Du hast leider vergessen deinen Namen mit auszugeben"
-      },
-      "compileWrongFormat": {
-        "task": "Compile",
-        "label": "Compile: Falsches Dateiformat",
-        "text": "- Deine Antwort ist leider nicht in einer `.txt` Datei gespeichert und wird daher nicht bewertet"
-      },
-      "compileWrongName": {
-        "task": "Compile",
-        "label": "Compile: Kompilierungsname falsch",
-        "text": "- Die Datei die Kompiliert werden soll heißt `Hello.java`"
-      },
-      "compileSwichedJavac": {
-        "task": "Compile",
-        "label": "Compile: java/c verwechselt",
-        "text": "- Du hast leider `java` und `javac` vertauscht. Mit `javac` wird die `.java` Datei kompiliert zu einer `.class` Datei. Mit dem Aufruf `java Programmname` (ohne das `.class`) wird das Programm ausgeführt"
-      },
-      "compileClassInJava": {
-        "task": "Compile",
-        "label": "Compile: java mit .class",
-        "text": "- `java` wird zwar auf der .class Datei aufgerufen, jedoch wird beim Aufruf das `.class` nicht mit geschrieben"
-      },
-      "compileClassWithDotJava": {
-        "task": "Compile",
-        "label": "Compile: java mit .java",
-        "text": "- `java` wird auf der .class Datei aufgerufen, jedoch wird beim Aufruf weder `.class` noch das `.java` mit geschrieben"
-      },
-      "compileWithoutJava": {
-        "task": "Compile",
-        "label": "Compile: javac ohne .java",
-        "text": "- `javac` muss mit dem vollen Dateinamen, also hier `Hello.java` aufgerufen werden, jedoch hast du beim Aufruf das `.java` nicht mit geschrieben"
-      },
-      "compileNoRun": {
-        "task": "Compile",
-        "label": "Compile: Kompiliert nicht ausgeführt",
-        "text": "- Du hast die Datei zwar kompiliert, jedoch nicht ausgeführt"
       },
       "vokabelnToCharArray": {
         "task": "Vokabeln",

@@ -1,5 +1,9 @@
 {
   "tasks": {
+    "Blatt 1": [
+      "HelloWorld",
+      "Compile"
+    ],
     "Blatt 5": [
       "Ship"
     ],
@@ -83,37 +87,57 @@
         "text": "Leider ist deine Abgabe nicht richtig"
       },
       "noPlainText": {
-        "task": ["References", "ListVSArray", "Widgets"],
+        "task": [
+          "References",
+          "ListVSArray",
+          "Widgets"
+        ],
         "label": "nicht als Plaintext",
         "text": "[FORMAT] gelten leider nicht als Plain-Text. Da aber von der Aufgabenstellung streng Plain-Text gefordert war dürfen wir diese Abgabe nicht korrigieren. Das nächste mal die Datei in einem Format wie `.txt`, `.md` oder `.adoc` abgeben."
       },
       "wrongReason": {
-        "task": ["References"],
+        "task": [
+          "References"
+        ],
         "label": "Falsche Begründungen",
         "text": "Leider sind deine Begründungen nicht sehr überzeugend/falsch."
       },
       "missingReason": {
-        "task": ["References", "ListVSArray"],
+        "task": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Begründungen fehlen",
         "text": "Leider fehlen deine Begründungen."
       },
       "noCompile": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Compiliert nicht",
         "text": "Leider kompiliert dein Programm nicht. Am besten testest du vor der Abgabe zumindest mal, ob das Programm überhaupt kompiliert. Oft wird einem bei der Fehlermeldung auch gesagt, was man falsch gemacht hat. Ansonsten kannst du natürlich immer gerne an sämtlichen Stellen nachfragen, wenn du nicht mehr weiter kommst.\nExplizit bei dir kompiliert es nicht aufgrund [Grund angeben]"
       },
       "wrongFileName": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Dateiname falsch",
         "text": "Schade, leider hast du deine Datei falsch benannt, sie sollte [Dateiname] heißen. Deshalb gibt es für diese Abgabe keine Punkte. Achte das nächste mal darauf, dass die Tests durchlaufen."
       },
       "wrongClassName": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Klassennamen falsch",
         "text": "Leider hast du deine Klasse falsch benannt, der Name muss exakt wie auf dem Übungsblatt sein. Deshalb gibt es für diese Abgabe keine Punkte. Achte das nächste mal darauf, dass die Tests durchlaufen."
       },
       "wrongDirec": {
-        "excluded": ["References"],
+        "excluded": [
+          "References"
+        ],
         "label": "Falsches Verzeichniss",
         "text": "Du hast leider das Programm im Falschen Ordner abgegeben, da wir feste Abgabevorschriften haben, kann ich das Programm leider nicht bewerten :("
       },
@@ -127,20 +151,60 @@
       "Zero": {
         "label": "∅",
         "text": ""
+      },
+      "noFeedback": {
+        "label": "Kein Feedback",
+        "text": ""
       }
     }
   },
   "taskErrors": {
     "options": {
       "allArgsUsedBeforeCheck": {
-        "excluded": ["References", "Examtask"],
+        "excluded": [
+          "References",
+          "Examtask"
+        ],
         "label": "Argument verwendet vor Check",
         "text": "- Du hast ein Argument verwendet (also auf `args[n-1]` zugegriffen), bevor du überprüft hast, ob es überhaupt existiert (also überprüft hast, ob `args.length` mindestens `n`). Das kann zu Abstürzen führen."
       },
       "wrongFormat": {
-        "excluded": ["References", "Examtask"],
+        "excluded": [
+          "References",
+          "Examtask"
+        ],
         "label": "Falsches Ausgabeformat",
         "text": "- Leider hast du dich nicht an das Ausgabeformat gehalten. So laufen unsere Tests nicht durch. Auch wenn es an manchen Stellen hier etwas banal klingt ist es vor allem später unglaublich wichtig sich wirklich an die Vorgaben zu halten, wie ein Programm Dinge aus und zurück gibt. Allerspätestens wenn man mit mehreren Personen arbeitet."
+      },
+      "helloWorldWrongoutput": {
+        "task": "HelloWorld",
+        "label": "Hello World: Falsche Ausgabe",
+        "text": "- Die Ausgabe war klar vorgegeben. Starten mit einem \"Hello\", dann ein Leerzeichen, dann der GitHub Name und zum Schluss noch ein Ausrufezeichen '!'"
+      },
+      "helloWorldNameMissing": {
+        "task": "HelloWorld",
+        "label": "Hello World: Namen vergessen",
+        "text": "- Du hast leider vergessen deinen Namen mit auszugeben"
+      },
+      "compileWrongFormat": {
+        "task": "Compile",
+        "label": "Compile: Falsches Dateiformat",
+        "text": "- Deine Antwort ist leider nicht in einer `.txt` Datei gespeichert und wird daher nicht bewertet"
+      },
+      "compileWrongName": {
+        "task": "Compile",
+        "label": "Compile: Kompilierungsname falsch",
+        "text": "- Die Datei die Kompiliert werden soll heißt `Hello.java`"
+      },
+      "compileSwichedJavac": {
+        "task": "Compile",
+        "label": "Compile: java/c verwechselt",
+        "text": "- Du hast leider `java` und `javac` vertauscht. Mit `javac` wird die `.java` Datei kompiliert zu einer `.class` Datei. Mit dem Aufruf `java Programmname` (ohne das `.class`) wird das Programm ausgeführt"
+      },
+      "compileClassInJava": {
+        "task": "Compile",
+        "label": "Compile: java mit .class",
+        "text": "- `java` wird zwar auf der .class Datei aufgerufen, jedoch wird beim aufruf das `.class` nicht mit geschrieben"
       },
       "vokabelnToCharArray": {
         "task": "Vokabeln",
@@ -248,7 +312,9 @@
         "text": "- Deine Formel für die Paralelschaltung/Reihenschaltung ist leider nicht richtig implementiert."
       },
       "ResistorfieldsNotPrivate": {
-        "task": ["Resistor"],
+        "task": [
+          "Resistor"
+        ],
         "label": "Instanzvariablen nicht private",
         "text": "Denk daran, dass wir sowenig wie möglich von einer Klasse nach außen sichtbar machen wollen. Deshalb sollten die Instanzvariablen eigentlich immer `private` sein."
       },
@@ -486,85 +552,123 @@
         "task": "Bin-Tree",
         "label": "Bin-Tree: Not Iterative",
         "text": "- Es war von der Aufgabenstellung klar gefordert dass das Maximum einmal Iterativ (mit Schleifen) und einmal Rekursive (Funktion ruft sich selber auf) gesucht werden soll. Leider hast du keine Iterative Implementierung gemacht"
-      }, 
+      },
       "MessSys--": {
         "task": "MessageSystem",
         "label": "MessageSystem: --- ",
         "text": "- ---"
-      }, 
+      },
       "CalculatorNoSwitch": {
         "task": "Minicalculator",
         "label": "Minicalculator: No Switch",
         "text": "- Hier hätte sich eine switch-case Struktur sehr angeboten. Das macht den Code etwas übersichtlicher und einfacher erweiterbar"
       }
-
-
     }
   },
   "syntaxErrors": {
     "intro": "Zur Syntax:",
     "options": {
       "checkStyleBonusOnce": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Checkstyle gibt einen Fehler",
         "text": "- Unsere Automatische Syntax-Style Überprüfung hat gefunden, dass du an einer Stelle ([ZEILE]) nicht konsistent mit den Vorgaben warst. Daher keine Bonuspunkte."
-      },"checkStyleBonus": {
-        "excluded": ["References", "ListVSArray"],
+      },
+      "checkStyleBonus": {
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Checkstyle gibt mehrere Fehler",
         "text": "- Unsere Automatische Syntax-Style Überprüfung hat gefunden, dass du an einigen Stellen nicht konsistent mit den Vorgaben warst. Daher keine Bonuspunkte."
       },
       "indent": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Einrückung fehlerhaft",
         "text": "- Achte bitte auf die Einrückung, damit der Code lesbar wird. (siehe Vorlesung 1)"
       },
       "badVariableName": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Variable unschön benannt",
         "text": "- Achte auf deine Variablen/Methodenbezeichnungen, damit klar ist, was sie speichern/machen.\n a, foo, tmp sind beispielsweise keine guten Namen."
       },
       "ifWhileForInline": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "if/while/for/else inline",
         "text": "- Bitte nutze keine Einzeiler für if/while/for/else Blöcke. Wir wollen eine Anweisung pro Zeile (mit ganz speziellen Ausnahmen) schreiben."
       },
       "ifWhileForWithoutBraces": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "if/while/for/else ohne Klammern",
         "text": "- Bitte nutze nach if/while/for/else immer die `{ }` Klammern."
       },
       "multipleStatementsPerLine": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Mehrere Anweisungen pro Zeile",
         "text": "- Bitte schreibe nur eine Anweisung pro Zeile. (mit ganz speziellen Ausnahmen)"
       },
       "toManyBlankLines": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Zu viele Leerzeilen",
         "text": "- Du hast ein paar viele Leerzeilen verwendet."
       },
       "noBlankLines": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Keine Leerzeilen",
         "text": "- Du hast keine Leerzeilen verwendet. Mit Leerzeilen kannst du logische Blöcke voneinander trennen, das macht den Code leichter lesbar."
       },
       "wrongCasing": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Falsche Groß-/Kleinschreibung",
         "text": "- Achte auf die Java Konventionen zur Groß-/Kleinschreibung: Variablennamen/Methodennamen werden in lowerCamelCase geschrieben und Klassennamen in UpperCamelCase. (s. Vorlesungsfolien 2)"
       },
       "commentsMissing": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Kommentare fehlen",
         "text": "- Hier wäre es vielleicht sinnvoll, Kommentare zu schreiben, besonders an den schweren Stellen (wie mehreren `for` Schleifen ineinander) oder bei der Behandlung von Sonderfällen."
       },
       "describingComments": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Beschreibende Kommentare",
         "text": "- Es ist sehr vorbildlich, ausführlich Kommentare zu schreiben. Allerdings solltest du dabei weniger beschreiben, was du tust (das kann man ja am Code ablesen), sondern eher warum du etwas tust. Natürlich ist es manchmal auch sinnvoll das was zu beschreiben, immer dann, wenn der Code das nicht mit einem Blick hergibt. Gute Variablen/Klassen/Methoden Namen sorgen meistens dafür, dass man Code wie einen Kommentar lesen kann."
       },
       "wrongMethodName": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Methodenname falsch",
         "text": "- Es ist wichtig, vorallem für unsere Tests, dass du dich wirklich an die vorgegebenen Methodennamen hälst. Auch wenn es an manchen Stellen hier etwas banal klingt ist es vor allem später unglaublich wichtig sich wirklich an die Vorgaben zu halten, wie ein Programm arbeitet und wie es eine Schnittstelle angibt. Allerspätestens wenn man mit mehreren Personen arbeitet."
       }
@@ -574,57 +678,91 @@
     "intro": "Weitere Anmerkung(en):",
     "options": {
       "==insteadOfEquals": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "== statt equals",
         "text": "- Verwende `.equals` statt `==` um Strings zu vergleichen."
       },
       "system.exit": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "System.exit",
         "text": "- Bitte kein `System.exit()` nutzen, unsere Tests mögen das nicht."
       },
       "misleadingErrorMessages": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Irreführende Fehlermeldungen",
         "text": "- Bitte achte darauf, dass deine Fehlermeldungen nicht \"falsch\" sind. Wenn du beispielsweise auf `args.length != 1` prüfst, deine Fehlermeldung aber *\"ERROR: Keine Argumente übergeben\"* lautet, bekommt der Nutzer die Fehlermeldung auch, wenn er 2 oder mehr Argumente übergibt. Das ist irreführend."
       },
       "blaError": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Nichts aussagende Fehlermeldung",
         "text": "- Bitte achte darauf, dass deine Fehlermeldungen etwas aussagen. Wenn du beispielsweise auf `args.length != 1` prüfst, deine Fehlermeldung aber *\"ERROR: Error\"* lautet, weiß der Nutzer nicht, was er falsch gemacht hat. (Ja, das mag nervig sein, aber es ist wichtig, das direkt zu üben und sich zu verinnerlichen.)"
       },
       "errorElseNester": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Fehler verschachtelt (mit else)",
         "text": "- Bitte beende dein Programm bei der Überprüfung der Nutzereingabe bei fehlerhafter Eingabe mit einem `return` und verwende keinen else Block für den eigentlichen Code. Bei vielen Fehlerüberprüfungen kann es sonst passieren, dass du ganz viele `else` Blöcke hast und der eigentliche Code ganz weit eingerückt ist. Also aus \n\n ```java\n if(args.length != 1){\n    ...\n} else {\n    // Der eigentliche Code\n}\n```\n\n wird \n\n```java\nif(args.length != 1){\n    ...\n    return;\n}\n// Der eigentliche Code\n```"
       },
       "stupidErrorElseNester": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Fehler verschachtelt (mit else) - trotz return",
         "text": "- Wenn du in der Fehlerüberprüfung `return` verwendest, kannst du den eigentlichen Code auch ohne `else` schreiben. Also aus \n\n ```java\n if(args.length != 1){\n    ...\n    return;\n}\nelse {\n    // Der eigentliche Code\n}\n```\n\n wird \n\n```java\nif(args.length != 1){\n    ...\n    return;\n}\n// Der eigentliche Code\n```"
       },
       "ErrorIfNester": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Fehler verschachtelt (mit if)",
         "text": "- Es ist oft sinnvoll, zuerst auf die Fehler zu überprüfen, und dann den eigentlichen Code auszuführen. Sonst kann es bei vielen Fehlerüberprüfungen passieren, dass du ganz viele verschachtelte if Blöcke hast und der eigentliche Code ganz weit eingerückt ist. Also aus \n\n ```java\n if(args.length > 0){\n    // Der eigentliche Code\n} else {\n    //Fehlermeldung\n}\n```\n\n wird \n\n```java\nif(args.length == 0){\n    //Fehlermeldung\n    return;\n}\n// Der eigentliche Code\n```"
       },
       ".class": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": ".class Datei hochgeladen",
         "text": "- Die .class Datein brauchen wir nicht, bitte nur die .java Datei hochladen."
       },
       "onlyOneFile": {
-        "excluded": ["Resistor", "Racecar", "MessageSystem"],
+        "excluded": [
+          "Resistor",
+          "Racecar",
+          "MessageSystem"
+        ],
         "label": "Nur eine Datei",
         "text": "- Lade bitte nur immer eine Datei (sofern nicht anders angegeben) hoch. Falls du mal eine falsche Datei hochlädst, lösche sie bitte wieder. [Wie das geht kannst du im Tutorial zum Abgabesystem nachlesen](https://hsp.pages.cs.uni-duesseldorf.de/programmierung/website/lectures/progra/tutorials/classroom/#falsch-hochgeladene-dateien-l%C3%B6schen)."
       },
       "scannerWithSystemInClosed": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "Scanner mit System.in geschlossen",
         "text": "- An sich ist es richtig, dass wir einen Scanner schließen, das ist bei Java mit `System.in` aber ein Sonderfall: einen Scanner auf `System.in` wollen wir in Java meistens nie selber schließen: https://coderanch.com/wiki/678613/Don-close-Scanner-tied-System"
       },
       "errorStreamInsteadOfOut": {
-        "excluded": ["References", "ListVSArray"],
+        "excluded": [
+          "References",
+          "ListVSArray"
+        ],
         "label": "System.err statt System.out",
         "text": "- Bitte verwende `System.out` statt `System.err` für die Ausgabe. Unsere Tests prüfen nur `System.out`."
       },
@@ -642,7 +780,10 @@
         "text": "- Am besten guckst du mal in die Musterlösung und/oder besuchst das Tutorium. Wenn du nicht weiterkommst, zögere nicht, uns zu fragen (im Forum / in den Übungen oder im Tutorium), wir helfen gerne."
       },
       "multipleClassesInOneFile": {
-        "task": ["Resistor", "Racecar"],
+        "task": [
+          "Resistor",
+          "Racecar"
+        ],
         "label": "Mehrere Klassen in einer Datei",
         "text": "- Bitte nur eine Klasse/ein Interface pro Datei."
       }
