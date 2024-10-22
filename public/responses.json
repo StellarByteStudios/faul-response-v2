@@ -4,6 +4,12 @@
       "HelloWorld",
       "Compile"
     ],
+    "Blatt 2": [
+      "Square",
+      "Ballistic",
+      "Random",
+      "Intendation"
+    ],
     "Blatt 5": [
       "Ship"
     ],
@@ -220,6 +226,16 @@
         "task": "Compile",
         "label": "Compile: Kompiliert nicht ausgeführt",
         "text": "- Du hast die Datei zwar kompiliert, jedoch nicht ausgeführt"
+      },
+      "randomMissedUpperLimit": {
+        "task": "Random",
+        "label": "Random: Obere Grenze nicht enthalten",
+        "text": "- Die Funktion Math.random() gibt eine Zahl zwischen (einschließlich) 0 und (ausschlieslich) 1 aus. So wie du die Funktion benutzt hast, wird die obere Grenze nie gewürfelt. Schau dir dazu am besten den Lösungsvorschlag auf der Kursseite an: https://hsp.pages.cs.uni-duesseldorf.de/programmierung/website/lectures/progra/tests/datatypes#zufallszahlen"
+      },
+      "randomNotEven": {
+        "task": "Random",
+        "label": "Random: Keine Normalverteilung",
+        "text": "- Die Funktion Math.random() gibt eine Zahl zwischen (einschließlich) 0 und (ausschlieslich) 1 aus. So wie du die Funktion benutzt hast, wird Das Ergebniss des Würfels nicht gleichverteilt. Schau dir dazu am besten den Lösungsvorschlag auf der Kursseite an: https://hsp.pages.cs.uni-duesseldorf.de/programmierung/website/lectures/progra/tests/datatypes#zufallszahlen"
       },
       "vokabelnToCharArray": {
         "task": "Vokabeln",
@@ -613,7 +629,7 @@
           "ListVSArray"
         ],
         "label": "Variable unschön benannt",
-        "text": "- Achte auf deine Variablen/Methodenbezeichnungen, damit klar ist, was sie speichern/machen.\n a, foo, tmp sind beispielsweise keine guten Namen."
+        "text": "- Achte auf deine Variablen/Methodenbezeichnungen, damit klar ist, was sie speichern/machen.\n a, foo, tmp sind beispielsweise keine guten Namen. Bei kleinen Formeln kann man eine Ausnahme `t` für die Zeit, oder `x0` für einen Anfangspunkt, aber das sind nur Ausnahmen."
       },
       "ifWhileForInline": {
         "excluded": [
@@ -793,6 +809,10 @@
       "lookIntoSolutionTutorium": {
         "label": "Musterlösung anschauen/Tutorium/Übungen besuchen",
         "text": "- Am besten guckst du mal in die Musterlösung und/oder besuchst das Tutorium. Wenn du nicht weiterkommst, zögere nicht, uns zu fragen (im Forum / in den Übungen oder im Tutorium), wir helfen gerne."
+      },
+      "lookIntoTestsTutorium": {
+        "label": "In die Tests gucken",
+        "text": "- Tip: Wenn du mal nicht sicher bist, warum denn die Tests nicht durchlaufen und du glaubst, alles richtig gemacht zu haben, dann kannst du auf das rote X neben deiner Abgabe klickst. Da wird dir angezeigt, dass nicht alle Tests erfolgreich waren. Wenn du dann auf Details klickst, steht da auch welche Tests genau fehlgeschlagen sind und auch warum. Nutze dies gerne in Zukunft, um deinen Code solange zu verbessern, bis alle Tests bestanden sind. Wenn alle Tests erfolgreich sind, wird statt dem roten X ein grüner Haken angezeigt.\nAber Vorsicht! Nutze dies nur um dein Programm zu verbessern! Wenn wir bei der Korrektur merken, das jemand schummelt und nur die Ausgabe daraufhin anpasst, dass die Tests denken das alles richtig ist, dann gibt es dafür keine Punkte! Das Programm muss generell die Anforderungen aus der Aufgabe erfüllen!"
       },
       "multipleClassesInOneFile": {
         "task": [
