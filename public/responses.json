@@ -10,6 +10,19 @@
       "Random",
       "Intendation"
     ],
+    "Blatt 3": [
+      "Chess",
+      "Codewort",
+      "Minmax",
+      "Newton",
+      "PQ",
+      "Reverse"
+    ],
+    "Blatt 4": [
+      "Cosinus",
+      "Lotto",
+      "Minesweeper"
+    ],
     "Blatt 5": [
       "Ship"
     ],
@@ -90,13 +103,28 @@
       },
       "wrong": {
         "label": "Einfach Falsch",
-        "text": "Leider ist deine Abgabe nicht richtig"
+        "text": "Leider ist deine Abgabe nicht richtig."
+      },
+      "oneErrorNotFound": {
+        "task": [
+          "Newton"
+        ],
+        "label": "Fehlersuche: Single",
+        "text": "Leider hast du einen Fehler übersehen."
+      },
+      "multipleErrorNotFound": {
+        "task": [
+          "Newton"
+        ],
+        "label": "Fehlersuche: Multi",
+        "text": "Leider hast du einige Fehler übersehen. Schau doch noch mal in die Musterlösung"
       },
       "noPlainText": {
         "task": [
           "References",
           "ListVSArray",
-          "Widgets"
+          "Widgets",
+          "Compile"
         ],
         "label": "nicht als Plaintext",
         "text": "[FORMAT] gelten leider nicht als Plain-Text. Da aber von der Aufgabenstellung streng Plain-Text gefordert war dürfen wir diese Abgabe nicht korrigieren. Das nächste mal die Datei in einem Format wie `.txt`, `.md` oder `.adoc` abgeben."
@@ -236,6 +264,46 @@
         "task": "Random",
         "label": "Random: Keine Normalverteilung",
         "text": "- Die Funktion Math.random() gibt eine Zahl zwischen (einschließlich) 0 und (ausschlieslich) 1 aus. So wie du die Funktion benutzt hast, wird Das Ergebniss des Würfels nicht gleichverteilt. Schau dir dazu am besten den Lösungsvorschlag auf der Kursseite an: https://hsp.pages.cs.uni-duesseldorf.de/programmierung/website/lectures/progra/tests/datatypes#zufallszahlen"
+      },
+      "pqRoundingError": {
+        "task": "PQ",
+        "label": "PQ: Rundungsfehler vergessen",
+        "text": "- Da es Rundungsungenauigkeiten bei Doubles gibt, solltest du nicht exakt auf `== 0` prüfen, sondern ob die Diskriminante oder die Differenz der Nullstellen kleiner ist als eine ziemlich kleine, positive Zahl (vgl. Lösungsvorschlag)"
+      },
+      "newtonTooMuch": {
+        "task": "Newton",
+        "label": "Newton: Zu Stark verändert",
+        "text": "- Die Aufgabe bestand darin, den vorgegebenen Code zu übernehmen und nur zu reparieren. Du hast leider zu viel geändert, als dass das noch als nur ein Bughunt durchgehen könnte."
+      },
+      "lottoMultiple": {
+        "task": "Lotto",
+        "label": "Lotto: Zahlen doppelt",
+        "text": "- Leider überprüfst du nicht, ob Zahlen bereits gezogen wurden. So werden Zahlen doppelt ausgegeben und z. B. bei `Lotto 10 10` wird die Zahl 10 nicht immer gezogen. Vergleiche mit dem Lösungsvorschlag."
+      },
+      "lottoBorders": {
+        "task": "Lotto",
+        "label": "Lotto: Grenzen nicht drin",
+        "text": "- Es werden bei dem Programm die Grenzen nicht mitgewürfelt. Bedenke, dass `Math.random()` die 1 niemals Würfelt. Schau dir dazu am besten den Lösungsvorschlag an oder auf der Kursseite: https://hsp.pages.cs.uni-duesseldorf.de/programmierung/website/lectures/progra/tests/datatypes#zufallszahlen"
+      },
+      "lottoDrawZero": {
+        "task": "Lotto",
+        "label": "Lotto: 0 wird gewürfelt",
+        "text": "- Das bei den Zufallszahlen ist die 0 mit dabei. Die Zahlen sollen aber bei 1 anfangen."
+      },
+      "mineWrong1": {
+        "task": "Minesweeper",
+        "label": "Minesweeper: Frage 1",
+        "text": "- Die Antwort zu Frage 1 ist leider Falsch: Es wird geprüft, ob die Gesamtzahl der Argumente zu der angegebenen Feldgröße passt."
+      },
+      "mineWrong2": {
+        "task": "Minesweeper",
+        "label": "Minesweeper: Frage 2",
+        "text": "- Die Antwort zu Frage 2 ist leider Falsch: Es werden die Minenfelder geprüft, denn diese werden mit einer -1 gekennzeichnet."
+      },
+      "mineWrong3": {
+        "task": "Minesweeper",
+        "label": "Minesweeper: Frage 3",
+        "text": "- Die Antwort zu Frage 3 ist leider Falsch: Hier wird sichergestellt, dass es zu keinem Out-of-Bound-Fehler (ungültiger Index) bei der darauf folgenden if-Abfrage kommt, also ob column/row innerhalb des Spielfeldes liegt. Ohne die Abfrage stürzt das Programm ab."
       },
       "vokabelnToCharArray": {
         "task": "Vokabeln",
