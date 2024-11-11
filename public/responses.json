@@ -24,7 +24,9 @@
       "Minesweeper"
     ],
     "Blatt 5": [
-      "Ship"
+      "Ship",
+      "Histogram",
+      "Kniffel"
     ],
     "Blatt 6": [
       "Vokabeln",
@@ -305,6 +307,31 @@
         "label": "Minesweeper: Frage 3",
         "text": "- Die Antwort zu Frage 3 ist leider Falsch: Hier wird sichergestellt, dass es zu keinem Out-of-Bound-Fehler (ungültiger Index) bei der darauf folgenden if-Abfrage kommt, also ob column/row innerhalb des Spielfeldes liegt. Ohne die Abfrage stürzt das Programm ab."
       },
+      "shipNicePic": {
+        "task": "Ship",
+        "label": "Ship: Schönes Bild",
+        "text": "Ein sehr kreatives Bild, find ich schön :)"
+      },
+      "histogramModulo": {
+        "task": "Histogram",
+        "label": "Histogram: Modulo by zero",
+        "text": "- Du kannst nicht immer einfach `x % n` rechnen befor du geprüft hast, ob n ungleich 0 ist. Denn so machst du eine Division durch 0 und das geht nicht."
+      },
+      "kiffelNoPashMethod": {
+        "task": "Kniffel",
+        "label": "Kniffel: keine Pashmethode",
+        "text": "- Du kannst den ähnlichen Code für die 1er bis 6er vermeiden. Wirf dazu mal einen Blick in den Lösungsvorschlag."
+      },
+      "kiffelNoPashMultiply": {
+        "task": "Kniffel",
+        "label": "Kniffel: Pasch nicht Multipliziert",
+        "text": "- Bei den 2er bis 6er hast du vergessen, die Anzahl der Würfel mit der Augenzahl zu multiplizieren. (Beispiel: 12226 gibt bei den Zweiern 3×2 Punkte.)"
+      },
+      "kiffelStreetWithDouble": {
+        "task": "Kniffel",
+        "label": "Kniffel: Straße mit Doppelzahl",
+        "text": "- Bei einer kleinen Straße kann eine Zahl doppelt sein. Die 4 aufeinanderfolgen Zahlen müssen im Array nicht direkt aufeinanderfolgend sein."
+      },
       "vokabelnToCharArray": {
         "task": "Vokabeln",
         "label": "Vokabeln: toCharArray()",
@@ -314,11 +341,6 @@
         "task": "Vokabeln",
         "label": "Vokabeln: Keine Mixed - Garantie",
         "text": "- Deine Vokabeln werden zwar durchgemixt, jedoch kann es bei dir vorkommen, dass die Vokabeln wieder zufällig in der richtigen Reihenfolge auftauchen. Das sollte nicht passieren. Du musst überprüfen, ob das geshuffelte Wort nicht gleich dem Originalwort ist. Falls die beiden gleich sind, musst du so lange das shuffeln wiederholen, bis du ein neues Wort raus hast."
-      },
-      "shipNicePic": {
-        "task": "Ship",
-        "label": "Ship: Schönes Bild",
-        "text": "Ein sehr kreatives Bild, find ich schön :)"
       },
       "skytaleNo28Check": {
         "task": "Skytale",
