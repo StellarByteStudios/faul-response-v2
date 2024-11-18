@@ -347,6 +347,11 @@
         "label": "Skytale: Kein 28 Länge Check",
         "text": "- Du hast vergessen zu überprüfen, ob die Nachricht genau 28 Zeichen hat."
       },
+      "skytaleMethodDoubleUse": {
+        "task": "Skytale",
+        "label": "Skytale: Methode doppelt nutzen",
+        "text": "- Wenn du es geschickt anstellst, dann kannst du das encrypt wie das decrypt mit einer Methode machen, da bei beiden \"Algorithmen\" die Nachricht in die Gleiche Richtung gedreht wird. Bei Interesse schau doch mal in der Musterlösung nach."
+      },
       "plateauWithOneForLoop": {
         "task": "Plateau",
         "label": "Plateau: Zwei for Schleifen",
