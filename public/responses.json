@@ -441,7 +441,7 @@
         "task": [
           "Resistor"
         ],
-        "label": "Instanzvariablen nicht private",
+        "label": "Resistor: Instanzvariablen nicht private",
         "text": "Denk daran, dass wir sowenig wie möglich von einer Klasse nach außen sichtbar machen wollen. Deshalb sollten die Instanzvariablen eigentlich immer `private` sein."
       },
       "ResistorDontCalculateValuesInConstructor": {
