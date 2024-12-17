@@ -532,7 +532,7 @@
       "ListVsArrayWrong": {
         "task": "ListVSArray",
         "label": "ListVSArray: Angabe Falsch",
-        "text": "- Deine Antwort ist leider Falsch. Hilmar sollte ein Array benutzen für den schnellen Zugriff und Lisa eine Liste für die Variable größe. Ein Array kann man nur beutzten, wenn man vorher die Größe der Daten schon kennt, da man es bei Laufzeit nicht mehr vergrößern kann. Dafür kann man schnell auf einzelne Indices zugreifen\nListen auf der anderen Seite können zwar \"beliebig\" wachsen (bis der Speicher voll läuft) aber man muss immer Stück für Stück durch die Liste durch, wenn man an einen bestimmten Index will. Daher ist sie zwar geeignet um Variable Datenmengen zu speichern, jedoch nicht um auf diese Effizient zuzugreifen"
+        "text": "- Deine Antwort ist leider Falsch. Lisa sollte ein Array benutzen für den schnellen Zugriff und Daniel eine Liste für die Variable größe. Ein Array kann man nur beutzten, wenn man vorher die Größe der Daten schon kennt, da man es bei Laufzeit nicht mehr vergrößern kann. Dafür kann man schnell auf einzelne Indices zugreifen\nListen auf der anderen Seite können zwar \"beliebig\" wachsen (bis der Speicher voll läuft) aber man muss immer Stück für Stück durch die Liste durch, wenn man an einen bestimmten Index will. Daher ist sie zwar geeignet um Variable Datenmengen zu speichern, jedoch nicht um auf diese Effizient zuzugreifen"
       },
       "WidgetsNoVisual": {
         "task": "Widgets",
